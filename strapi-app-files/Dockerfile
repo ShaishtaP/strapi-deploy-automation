@@ -13,6 +13,8 @@ RUN npm install
 # Copy the rest of the app
 COPY . .
 
+COPY package.json package-lock.json* ./
+
 # Rebuild better-sqlite3 inside container
 RUN npm rebuild better-sqlite3
 
