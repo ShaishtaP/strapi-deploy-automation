@@ -5,7 +5,7 @@ on:
     inputs:
       image_tag:
         description: "Docker Image Tag"
-        required: false
+        required: true
 
 jobs:
   deploy:
