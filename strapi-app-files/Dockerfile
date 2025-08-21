@@ -19,7 +19,7 @@ COPY . .
 RUN npm rebuild better-sqlite3
 
 # Expose port
-EXPOSE 80
+EXPOSE 1337
 
 # Start the app
 CMD ["npm", "run", "develop"]
